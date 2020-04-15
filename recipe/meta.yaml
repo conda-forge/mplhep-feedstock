@@ -1,18 +1,18 @@
 {% set name = "mplhep" %}
-{% set version = "0.1.14" %}
+{% set version = "0.1.15" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: b1a094fe352cc98ef5480c8b4a3bc12d75088b3fd7ae00f1582043838d4a8369
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 9fc979e14428fd7a116b21ee422a8d052496d89ca53ec33d1fc957a1e3a9353b
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -31,11 +31,11 @@ test:
     - mplhep
 
 about:
-  home: "https://github.com/scikit-hep/mplhep"
+  home: https://github.com/scikit-hep/mplhep
   license: MIT
   license_file: LICENSE
-  summary: "Matplotlib styles for HEP"
-  dev_url: "https://github.com/scikit-hep/mplhep"
+  summary: Matplotlib styles for HEP
+  dev_url: https://github.com/scikit-hep/mplhep
 
 extra:
   recipe-maintainers:
