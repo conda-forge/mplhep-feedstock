@@ -5,7 +5,7 @@ Home: https://github.com/scikit-hep/mplhep
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Matplotlib styles for HEP
 
