@@ -5,11 +5,11 @@ Home: https://github.com/scikit-hep/mplhep
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mplhep-feedstock/blob/master/LICENSE.txt)
 
 Summary: Matplotlib styles for HEP
 
-
+Development: https://github.com/scikit-hep/mplhep
 
 Current build status
 ====================
