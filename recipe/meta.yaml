@@ -1,5 +1,5 @@
 {% set name = "mplhep" %}
-{% set version = "0.2.7" %}
+{% set version = "0.2.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8e5eda09de66c6c60bc8708d17735fa7ace59a3f763295d823da53671635742b
+  sha256: 75a08062dc9f4f850758eda05add310492ac77dc79899b47668472c20dd48e35
 
 build:
   number: 0
