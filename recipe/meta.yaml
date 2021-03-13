@@ -17,12 +17,12 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
     - matplotlib-base >=3.2
     - numpy >=1.16.0
     - packaging
-    - python
+    - python >=3.6
     - requests >=2.21,<3
     - scipy >=1.1.0
 
