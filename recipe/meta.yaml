@@ -1,5 +1,5 @@
 {% set name = "mplhep" %}
-{% set version = "0.2.16" %}
+{% set version = "0.2.17" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 40e4f4f98f4c1bb1d8dbff7e137e15756b80fa8e7e3be791ded5e98eef4127de
+  sha256: b0e209871aa3b5c6c68ac6cfc4813e95a0c1f97f9e4718df71e386bbcc978e2d
 
 build:
   number: 0
@@ -17,12 +17,12 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
     - matplotlib-base >=3.2
     - numpy >=1.16.0
     - packaging
-    - python
+    - python >=3.6
     - requests >=2.21,<3
     - scipy >=1.1.0
 
