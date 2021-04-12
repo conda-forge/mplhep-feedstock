@@ -24,7 +24,7 @@ requirements:
     - packaging
     - python >=3.7
     - mplhep_data
-- uhi>=0.2.0
+    - uhi>=0.2.0
 test:
   imports:
     - mplhep
