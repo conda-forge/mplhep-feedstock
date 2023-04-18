@@ -1,11 +1,11 @@
-About mplhep
-============
+About mplhep-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mplhep-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/scikit-hep/mplhep
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mplhep-feedstock/blob/main/LICENSE.txt)
 
 Summary: Matplotlib styles for HEP
 
