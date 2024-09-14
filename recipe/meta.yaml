@@ -10,14 +10,15 @@ source:
   sha256: bb86951081050236a261683fca2fece3326c116d481c56c7a2566f6ff21773c3
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - pip
     - python >=3.7
+    - setuptools
     - setuptools_scm
   run:
     - matplotlib-base >=3.4
