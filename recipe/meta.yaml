@@ -42,4 +42,5 @@ about:
 extra:
   recipe-maintainers:
     - andrzejnovak
+    - jonas-eschle
     - conda-forge/scikit-hep
