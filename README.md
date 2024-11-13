@@ -11,6 +11,8 @@ Summary: Matplotlib styles for HEP
 
 Development: https://github.com/scikit-hep/mplhep
 
+Documentation: https://mplhep.readthedocs.io/
+
 Current build status
 ====================
 
