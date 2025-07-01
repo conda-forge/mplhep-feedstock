@@ -1,5 +1,5 @@
 {% set name = "mplhep" %}
-{% set version = "0.3.59" %}
+{% set version = "0.4.0" %}
 {% set python_min = "3.8" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 06f4b3a799e92fe6982ed3939dd648d0f972781aca3dc814a83e5bbd970649fe
+  sha256: 485d67db2dd7a1091eee86580fe46cf32dd0b0fc34d6db6246b1ef59346a810c
 
 build:
   number: 0
