@@ -1,0 +1,54 @@
+schema_version: 1
+
+context:
+  version: "1.0.0"
+  python_min: "3.9"
+
+package:
+  name: mplhep
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/m/mplhep/mplhep-${{ version }}.tar.gz
+  sha256: efab1ec4545f75a47fe6d1dd5862667e8c12054f4d933c089052c345e6940b43
+
+build:
+  number: 1
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - pip
+    - python ${{ python_min }}.*
+    - hatchling
+    - hatch-vcs
+  run:
+    - matplotlib-base >=3.4
+    - numpy >=1.16.0
+    - packaging
+    - python >=${{ python_min }}
+    - mplhep_data >=0.0.4
+    - uhi >=0.2.0
+
+tests:
+  - python:
+      imports:
+        - mplhep
+      pip_check: true
+      python_version: ${{ python_min }}.*
+
+
+about:
+  license: MIT
+  license_file: LICENSE
+  summary: Matplotlib styles for HEP
+  homepage: https://github.com/scikit-hep/mplhep
+  repository: https://github.com/scikit-hep/mplhep
+  documentation: https://mplhep.readthedocs.io/
+
+extra:
+  recipe-maintainers:
+    - andrzejnovak
+    - jonas-eschle
+    - conda-forge/scikit-hep
