@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.1.0"
+  version: "1.1.1"
   python_min: "3.9"
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/m/mplhep/mplhep-${{ version }}.tar.gz
-  sha256: bc79cc481b27835f7cc069e9e0d801e203e37c61af3131c717191d19838908db
+  sha256: eab4314a50e8ee18773fe032bfb12a7b0c770055a31472c9d586c9a8163320c3
 
 build:
   number: 0
