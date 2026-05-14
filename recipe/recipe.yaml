@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   version: "1.2.0"
-  python_min: "3.9"
+  python_min: "3.10"
 
 package:
   name: mplhep
@@ -24,7 +24,7 @@ requirements:
     - hatchling
     - hatch-vcs
   run:
-    - matplotlib-base >=3.4
+    - matplotlib-base >=3.10.8
     - numpy >=1.16.0
     - packaging
     - python >=${{ python_min }}
