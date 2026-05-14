@@ -1,8 +1,8 @@
 schema_version: 1
 
 context:
-  version: "1.1.2"
-  python_min: "3.9"
+  version: "1.2.0"
+  python_min: "3.10"
 
 package:
   name: mplhep
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/m/mplhep/mplhep-${{ version }}.tar.gz
-  sha256: d9f94248b1b0fa4a14b42876f838e91804c16331c933c5568ae4a9886c610781
+  sha256: 68a0a70e19eaec52f8492b84630ae7801cad16e2b6e83e067a13267ef6112d42
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - hatchling
     - hatch-vcs
   run:
-    - matplotlib-base >=3.4
+    - matplotlib-base >=3.10.8
     - numpy >=1.16.0
     - packaging
     - python >=${{ python_min }}
