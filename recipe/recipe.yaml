@@ -26,8 +26,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - matplotlib-base >=3.11.0
-    - numpy >=1.16.0
-    - packaging
+    - numpy >=1.25.0
     - mplhep_data >=0.0.4
     - uhi >=0.2.0
 
